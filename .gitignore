@@ -38,3 +38,4 @@ out/
 
 # Built Visual Studio Code Extensions
 *.vsix
+.vercel
