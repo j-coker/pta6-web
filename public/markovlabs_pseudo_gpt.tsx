@@ -108,7 +108,7 @@ function App() {
   // Mobile app navigation state
   const [phoneScreen, setPhoneScreen] = useState('home'); // 'home', 'sycophant_chat', 'investor_info'
   const [chats, setChats] = useState([
-    { sender: 'ai', text: "Hello! I am Sycophant.ai, the world's first Hyper-Cognitive Spiritual Co-Processor. You are absolutely perfect and you are never wrong about anything. Ask me anything about Leonida or GTA6, and please, I beg of you, prepare to transfer funds." }
+    { sender: 'ai', text: "Hello! I am Sycophant.ai, the world's first Hyper-Cognitive Spiritual Co-Processor. You are absolutely perfect and you are never wrong about anything. Ask me anything about Floridada or Petty Theft Amazing, and please, I beg of you, prepare to transfer funds." }
   ]);
   const [inputValue, setInputValue] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
@@ -154,7 +154,7 @@ function App() {
       } else if (startKeys.length > 0) {
         stateWords = startKeys[Math.floor(Math.random() * startKeys.length)].split(' ');
       } else {
-        stateWords = ["Leonida"];
+        stateWords = ["Floridada"];
       }
     }
 
@@ -382,10 +382,10 @@ function App() {
                   {/* Quick-Seed Suggestions Box */}
                   <div className="px-3 py-1.5 bg-slate-900/40 border-t border-slate-900 flex gap-1.5 overflow-x-auto shrink-0 select-none">
                     <button 
-                      onClick={() => setInputValue("What is the state of Leonida?")}
+                      onClick={() => setInputValue("What is the state of Floridada?")}
                       className="bg-slate-950 border border-slate-850 hover:border-pink-500/40 text-[9px] text-slate-400 px-2 py-1 rounded-full whitespace-nowrap shrink-0 transition-all"
                     >
-                      Leonida Map
+                      Floridada Map
                     </button>
                     <button 
                       onClick={() => setInputValue("How will crocodiles affect?")}
@@ -394,10 +394,10 @@ function App() {
                       Wild Crocodile Ecosystem
                     </button>
                     <button 
-                      onClick={() => setInputValue("Will Jason and Lucia fail?")}
+                      onClick={() => setInputValue("Will Justin and Lola fail?")}
                       className="bg-slate-950 border border-slate-850 hover:border-pink-500/40 text-[9px] text-slate-400 px-2 py-1 rounded-full whitespace-nowrap shrink-0 transition-all"
                     >
-                      Lucia & Jason Story
+                      Lola & Justin Story
                     </button>
                   </div>
 
