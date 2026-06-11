@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sycophant.ai — The Sovereign Devotion Protocol</title>
+<meta name="description" content="The world's first Hyper-Cognitive Spiritual Co-Processor. A Petty Theft Auto VI parody.">
+<link rel="icon" href="sycophant-ai-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind (Play CDN — full JIT, no build step) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  // The component references slate-850 (not a default Tailwind shade) — define it.
+  tailwind.config = {
+    theme: { extend: { colors: { 'slate-850': '#172032' } } }
+  };
+</script>
+
+<!-- Resolve the component's bare imports to CDN ESM builds (single shared React instance) -->
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react-dom": "https://esm.sh/react-dom@18.3.1?external=react",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client?external=react",
+    "lucide-react": "https://esm.sh/lucide-react@0.460.0?external=react"
+  }
+}
+</script>
+
+<style>
+  html, body { background:#020617; margin:0; min-height:100vh; }
+
+  /* Boot placeholder shown until React mounts */
+  #syco-loading {
+    position:fixed; inset:0; display:flex; align-items:center; justify-content:center;
+    color:#f472b6; font-family:'Space Mono',ui-monospace,monospace;
+    font-size:.8rem; letter-spacing:.25em; text-transform:uppercase;
+  }
+
+  /* Unobtrusive return link back to the main fan site */
+  .pta6-back {
+    position:fixed; left:14px; bottom:14px; z-index:9999;
+    font-family:'Space Mono',ui-monospace,monospace; font-size:.7rem; letter-spacing:.08em;
+    text-decoration:none; color:#cbd5e1; background:rgba(15,23,42,.85);
+    border:1px solid #334155; border-radius:9999px; padding:8px 14px;
+    backdrop-filter:blur(6px); transition:color .2s, border-color .2s, box-shadow .2s;
+  }
+  .pta6-back:hover { color:#fff; border-color:#ff2e97; box-shadow:0 0 18px rgba(255,46,151,.45); }
+</style>
+</head>
+<body>
+  <div id="syco-loading">Booting Sycophant.ai…</div>
+  <div id="root"></div>
+  <a class="pta6-back" href="./index.html">← Back to Petty Theft Auto VI</a>
+
+  <!-- Babel transpiles the JSX component in-browser; data-type="module" keeps the
+       import statements intact so the importmap above resolves them. -->
+  <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
+  <script type="text/babel" data-type="module" data-presets="react" src="./markovlabs_pseudo_gpt.tsx"></script>
+</body>
+</html>
